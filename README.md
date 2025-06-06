@@ -25,6 +25,31 @@ This project demonstrates a complete end-to-end pipeline for Spam Email Detectio
 
 ---
 
+Then place them in the following folder:
+
+```
+model_training/
+    SpamAssasin.csv
+    CEAS_08.csv
+    Enron.csv
+    Ling.csv
+    Nazario.csv
+    Nigerian_Fraud.csv
+
+```
+After placing the CSV files, run the training script:
+
+```bash
+python model_training/logisticregression.py
+```
+
+This will generate:
+
+-Spam_Detection_Model.pkl
+
+-features.pkl
+
+
 ## 🚀 Features
 
 ✅ Model trained on **6 Kaggle datasets**  
@@ -42,6 +67,7 @@ This project demonstrates a complete end-to-end pipeline for Spam Email Detectio
 SpamDetectionML/
 ├── model_training/                 
 │   └── logisticregression.py        # Model training code (clean Python script)
+│   ├── [user-provided datasets].csv # Place 6 Kaggle CSV datasets here
 ├── EmailFetchApi.py                 # Inference script using Gmail API + model
 ├── Spam_Detection_Model.pkl         # Pre-trained Logistic Regression model
 ├── features.pkl                     # Saved TF-IDF vectorizer
