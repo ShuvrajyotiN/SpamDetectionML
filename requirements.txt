@@ -1,0 +1,14 @@
+# Gmail API related
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client==2.121.0
+
+# Machine learning and data processing
+scikit-learn
+pandas
+numpy
+joblib
+
+# For email parsing and HTML cleaning
+beautifulsoup4
