@@ -10,7 +10,7 @@ import joblib
 
 from pickle import TRUE
 
-csv_files = glob.glob('/model_training/*.csv')
+csv_files = glob.glob('model_training/*.csv')
 columns_to_keep = ['subject', 'body', 'label']
 df_list = [pd.read_csv(file, usecols = columns_to_keep) for file in csv_files]
 df = pd.concat(df_list, ignore_index=True)
