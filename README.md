@@ -39,12 +39,17 @@ This project demonstrates a complete end-to-end pipeline for Spam Email Detectio
 
 ```
 .
-├── EmailFetchApi.py            # Uses Gmail API to fetch emails, loads model + vectorizer, and classifies emails
-├── Spam_Detection_Model.pkl    # Pre-trained Logistic Regression model (trained on 6 Kaggle datasets)
-├── features.pkl                # Saved TF-IDF vectorizer used during training
-├── requirements.txt            # Required Python packages
-├── README.md                   # Project documentation (this file)
-└── .gitignore                  # Files/folders to ignore when pushing to GitHub
+SpamDetectionML/
+├── model_training/                 
+│   └── logisticregression.py        # Model training code (clean Python script)
+├── EmailFetchApi.py                 # Inference script using Gmail API + model
+├── Spam_Detection_Model.pkl         # Pre-trained Logistic Regression model
+├── features.pkl                     # Saved TF-IDF vectorizer
+├── requirements.txt                 # Required Python packages
+├── README.md                        # Project documentation
+├── LICENSE                          # License file (MIT License suggested)
+└── .gitignore                       # Ignore sensitive files and unwanted files
+
 ```
 
 ---
