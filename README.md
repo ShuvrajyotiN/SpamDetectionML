@@ -24,7 +24,7 @@ This project demonstrates a complete end-to-end pipeline for Spam Email Detectio
 - The **email subject and body are combined**, processed, and classified as **Spam** or **Not Spam**.
 
 ---
-Download the datasets from kaggle 
+Download the datasets from kaggle. 
 Then place them in the following folder:
 
 ```
